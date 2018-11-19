@@ -43,7 +43,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
-    <Compile Include="Lib\MenuState.cs" />
+    <Compile Include="States\MenuState.cs" />
     <Compile Include="Lib\Register.cs" />
     <Compile Include="Lib\StateMachine.cs" />
     <Compile Include="Lib\State.cs" />
@@ -51,8 +51,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="GameMath, Version=1.4.22.6799, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GameMath.Net.1.4.22.6799\lib\GameMath.dll</HintPath>
+    </Reference>
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Myra, Version=0.7.2.142, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Myra.0.7.2.142\lib\net45\Myra.dll</HintPath>
+    </Reference>
+    <Reference Include="Myra.Editor, Version=0.7.2.142, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Myra.Editor.0.7.2.142\lib\net45\Myra.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -108,10 +120,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="app.manifest" />
+    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="States\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
