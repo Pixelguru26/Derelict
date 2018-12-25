@@ -8,16 +8,27 @@ using System.Threading.Tasks;
 
 namespace TrashStrat.Lib
 {
-	interface State
+	abstract class State
 	{
-		void Initialize();
+		private StateMachine parent;
+		public StateMachine Parent
+		{
+			get => parent;
+		}
 
-		void LoadContent();
+		public State(StateMachine Parent)
+		{
+			parent = Parent;
+		}
 
-		void UnloadContent();
+		public abstract void Initialize();
 
-		void Update(GameTime gameTime, double deltaTime);
+		public abstract void LoadContent();
 
-		void Draw(GameTime gameTime, GraphicsDeviceManager graphics, SpriteBatch spriteBatch);
+		public abstract void UnloadContent();
+
+		public abstract void Update(GameTime gameTime, double deltaTime);
+
+		public abstract void Draw(GameTime gameTime, GraphicsDeviceManager graphics, SpriteBatch spriteBatch);
 	}
 }

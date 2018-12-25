@@ -10,14 +10,21 @@ namespace TrashStrat.Lib
 {
 	partial class StateMachine
 	{
+		private Game1 host;
+		public Game1 Host
+		{
+			get => host;
+		}
+
 		// storage system for states
 		Dictionary<string, int> StatesDict;
 		List<State> StatesList;
 		public State CurrentState;
 
 		// constructor
-		public StateMachine()
+		public StateMachine(Game1 Host)
 		{
+			host = Host;
 			StatesDict = new Dictionary<string, int>();
 			StatesList = new List<State>();
 			RegisterStates();

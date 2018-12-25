@@ -42,13 +42,18 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Data\UnitType.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="Data\Player.cs" />
+    <Compile Include="States\GameInstanceState.cs" />
+    <Compile Include="States\GameMenuState.cs" />
     <Compile Include="States\MenuState.cs" />
     <Compile Include="Lib\Register.cs" />
     <Compile Include="Lib\StateMachine.cs" />
     <Compile Include="Lib\State.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Unit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GameMath, Version=1.4.22.6799, Culture=neutral, processorArchitecture=MSIL">

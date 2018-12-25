@@ -17,8 +17,9 @@ namespace TrashStrat.Lib
 
 			// main registration
 			// template:
-			//	Register(new State(), "state");
-			Register(new MenuState(),"menu");
+			//	Register(new State(this), "state");
+			Register(new MenuState(this), "menu");
+			Register(new GameInstanceState(this), "gameinstance");
 		}
 	}
 }
