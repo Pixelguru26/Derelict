@@ -22,9 +22,13 @@ namespace TrashStrat
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 			IsMouseVisible = true;
+			
 			stateMachine = new StateMachine(this);
 			stateMachine.SetState("gameinstance");
-        }
+
+			Window.AllowUserResizing = true;
+			Window.ClientSizeChanged += OnResize;
+		}
 		
         protected override void Initialize()
         {
@@ -67,5 +71,18 @@ namespace TrashStrat
 
             base.Draw(gameTime);
         }
-    }
+
+		public void OnResize(Object sender, EventArgs e)
+		{
+			//graphics.PreferredBackBufferWidth = .Width;
+			//graphics.PreferredBackBufferHeight = .Height;
+			//graphics.ApplyChanges();
+
+			// Additional code to execute when the user drags the window
+			// or in the case you programmatically change the screen or windows client screen size.
+			// code that might directly change the backbuffer width height calling apply changes.
+			// or passing changes that must occur in other classes or even calling there OnResize methods
+			// though those methods can simply be added to the Windows event caller
+		}
+	}
 }
