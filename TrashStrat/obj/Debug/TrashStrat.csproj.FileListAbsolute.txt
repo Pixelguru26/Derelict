@@ -43,3 +43,6 @@ C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\obj\Debug\TrashStrat.csproj.Co
 C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\obj\Debug\TrashStrat.exe
 C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\obj\Debug\TrashStrat.pdb
 C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\bin\DesktopGL\AnyCPU\Debug\Content\Grid.xnb
+C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\bin\DesktopGL\AnyCPU\Debug\Content\UnitBase.xnb
+C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\bin\DesktopGL\AnyCPU\Debug\Content\Arrow.xnb
+C:\Users\Pixel\Source\Repos\TrashStrat\TrashStrat\bin\DesktopGL\AnyCPU\Debug\Content\Selector.xnb

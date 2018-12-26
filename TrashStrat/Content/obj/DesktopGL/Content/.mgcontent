@@ -4,9 +4,15 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Pixel/Source/Repos/TrashStrat/TrashStrat/Content/Arrow.png</File>
     <File>C:/Users/Pixel/Source/Repos/TrashStrat/TrashStrat/Content/Grid.png</File>
+    <File>C:/Users/Pixel/Source/Repos/TrashStrat/TrashStrat/Content/Selector.png</File>
+    <File>C:/Users/Pixel/Source/Repos/TrashStrat/TrashStrat/Content/UnitBase.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

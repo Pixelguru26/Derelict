@@ -13,8 +13,8 @@ namespace TrashStrat
     /// </summary>
     public class Game1 : Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public GraphicsDeviceManager graphics;
+        public SpriteBatch spriteBatch;
 		StateMachine stateMachine;
         
         public Game1()
@@ -58,16 +58,14 @@ namespace TrashStrat
         {
 			//if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();
 			stateMachine.Update(gameTime);
-
+			
             base.Update(gameTime);
         }
 		
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-			spriteBatch.Begin();
 			stateMachine.Draw(gameTime, graphics, spriteBatch);
-			spriteBatch.End();
 
             base.Draw(gameTime);
         }

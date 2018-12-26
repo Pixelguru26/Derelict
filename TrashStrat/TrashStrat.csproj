@@ -45,6 +45,7 @@
     <Compile Include="Data\UnitType.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Data\Player.cs" />
+    <Compile Include="Lib\Util.cs" />
     <Compile Include="States\GameInstanceState.cs" />
     <Compile Include="States\GameMenuState.cs" />
     <Compile Include="States\MenuState.cs" />
